@@ -2,7 +2,7 @@
 
 <img src="imagem/html-css-js.png" alt="Logo" align="center" width="150">
 
-Um site totalmente responsivo feito com HTML, CSS E JS. O objetivo dele é converter do real para dolar e euro, espero que o site te ajude!
+Um site totalmente responsivo feito com HTML, CSS E JS. O objetivo dele é converter do real para dolar e euro, espero que o site te ajude! Esse era um código que eu já tinha em python, feito em um curso com Gustavo Guanabara e converti para JS.
 
 OBS: Esterei sempre atualizando!
 
