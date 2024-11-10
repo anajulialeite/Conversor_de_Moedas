@@ -6,6 +6,8 @@ Um site totalmente responsivo feito com HTML, CSS E JS. O objetivo dele é conve
 
 OBS: Esterei sempre atualizando!
 
+<img src="imagem/moedas" alt="moeda" align="center" width="300">
+
 # License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
