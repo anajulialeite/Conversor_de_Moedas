@@ -8,7 +8,7 @@ OBS: Esterei sempre atualizando!
 
 Esse é o link do meu projeto: https://anajulialeite.github.io/Conversor_de_Moedas/
 
-<img src="imagem/moedas" alt="moeda" align="center" width="300">
+<img src="imagem/Moedas" alt="moeda" align="center" width="300">
 
 # License
 
