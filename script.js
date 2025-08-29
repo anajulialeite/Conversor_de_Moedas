@@ -8,7 +8,7 @@ function converter() {
     }
 
     // Taxas de câmbio (essas taxas variam de acordo com a cotação)
-    const taxaDolar = 6.19;
+    const taxaDolar = 5.50;
     const taxaEuro = 6.46;
 
     // Calcula o valor em dólares e euros
