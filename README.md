@@ -12,6 +12,6 @@ Esse é o link do meu projeto <a href= "https://anajulialeite.github.io/Converso
 
 <img src="imagem/Moedas.png" alt="moeda" align="center" width="300">
 
-# License
+## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
