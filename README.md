@@ -14,4 +14,4 @@ Esse é o link do meu projeto <a href= "https://anajulialeite.github.io/Converso
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-%231C003F.svg)](./LICENSE)
