@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conversor de moedas em tempo real — converta Real (BRL) para Dólar (USD) e Euro (EUR) com cotações atualizadas.">
+    <meta name="description "content="Conversor de moedas em tempo real — converta Real (BRL) para Dólar (USD) e Euro (EUR) com cotações atualizadas.">
     <link rel="shortcut icon" href="imagem/moeda.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <title>Conversor de Moedas — BRL → USD | EUR</title>
+    <title>Conversor de Moedas</title>
 </head>
+
 <body>
     <div class="app">
         <!-- Background particles -->
@@ -37,20 +39,14 @@
                 </label>
                 <div class="input-wrapper">
                     <span class="currency-prefix">R$</span>
-                    <input 
-                        type="number" 
-                        id="real" 
-                        placeholder="0,00"
-                        min="0"
-                        step="0.01"
-                        autocomplete="off"
-                    >
+                    <input type="text" id="real" class="converter-input" placeholder="0,00" inputmode="decimal"
+                        autocomplete="off">
                 </div>
             </section>
 
             <!-- Divider -->
             <div class="divider">
-                <span class="divider-icon">⇩</span>
+                <span class="divider-icon">⇅</span>
             </div>
 
             <!-- Results Cards -->
@@ -66,7 +62,8 @@
                     </div>
                     <div class="card-value" id="valor-usd">
                         <span class="card-symbol">US$</span>
-                        <span class="card-amount">0,00</span>
+                        <input type="text" class="card-amount" id="input-usd" placeholder="0,00" inputmode="decimal"
+                            autocomplete="off">
                     </div>
                     <div class="card-rate">
                         <span class="rate-label">Cotação:</span>
@@ -85,7 +82,8 @@
                     </div>
                     <div class="card-value" id="valor-eur">
                         <span class="card-symbol">€</span>
-                        <span class="card-amount">0,00</span>
+                        <input type="text" class="card-amount" id="input-eur" placeholder="0,00" inputmode="decimal"
+                            autocomplete="off">
                     </div>
                     <div class="card-rate">
                         <span class="rate-label">Cotação:</span>
@@ -107,4 +105,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -79,16 +79,64 @@ body {
     animation: float 12s infinite ease-in-out;
 }
 
-.particles span:nth-child(1) { width: 200px; height: 200px; top: 10%; left: -5%;  animation-delay: 0s; }
-.particles span:nth-child(2) { width: 150px; height: 150px; top: 60%; right: -8%; animation-delay: 2s; }
-.particles span:nth-child(3) { width: 100px; height: 100px; top: 80%; left: 20%;  animation-delay: 4s; }
-.particles span:nth-child(4) { width: 120px; height: 120px; top: 5%;  right: 15%; animation-delay: 6s; }
-.particles span:nth-child(5) { width: 80px;  height: 80px;  top: 40%; left: 10%;  animation-delay: 8s; }
-.particles span:nth-child(6) { width: 60px;  height: 60px;  top: 30%; right: 25%; animation-delay: 10s; }
+.particles span:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: -5%;
+    animation-delay: 0s;
+}
+
+.particles span:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: -8%;
+    animation-delay: 2s;
+}
+
+.particles span:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.particles span:nth-child(4) {
+    width: 120px;
+    height: 120px;
+    top: 5%;
+    right: 15%;
+    animation-delay: 6s;
+}
+
+.particles span:nth-child(5) {
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 10%;
+    animation-delay: 8s;
+}
+
+.particles span:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    top: 30%;
+    right: 25%;
+    animation-delay: 10s;
+}
 
 @keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50%      { transform: translateY(-30px) scale(1.08); }
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-30px) scale(1.08);
+    }
 }
 
 /* --- Container (Glass Card) --- */
@@ -106,8 +154,15 @@ body {
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* --- Header --- */
@@ -130,8 +185,15 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50%      { transform: scale(1.12); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
 }
 
 h1 {
@@ -196,9 +258,10 @@ h1 {
     user-select: none;
     background: rgba(245, 166, 35, 0.08);
     border-right: 1px solid var(--glass-border);
+    flex-shrink: 0;
 }
 
-input#real {
+.converter-input {
     flex: 1;
     background: transparent;
     border: none;
@@ -208,16 +271,10 @@ input#real {
     font-weight: 600;
     color: var(--text);
     font-family: var(--font);
-    -moz-appearance: textfield;
+    min-width: 0;
 }
 
-input#real::-webkit-outer-spin-button,
-input#real::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input#real::placeholder {
+.converter-input::placeholder {
     color: var(--text-dim);
     font-weight: 400;
 }
@@ -237,8 +294,15 @@ input#real::placeholder {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
 }
 
 /* --- Result Cards --- */
@@ -258,12 +322,24 @@ input#real::placeholder {
     animation: fadeInCard 0.5s ease-out both;
 }
 
-.card:nth-child(1) { animation-delay: 0.2s; }
-.card:nth-child(2) { animation-delay: 0.35s; }
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.35s;
+}
 
 @keyframes fadeInCard {
-    from { opacity: 0; transform: translateX(-15px); }
-    to   { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .card:hover {
@@ -271,8 +347,13 @@ input#real::placeholder {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
-.card-usd:hover { border-color: var(--card-usd-accent); }
-.card-eur:hover { border-color: var(--card-eur-accent); }
+.card-usd:hover {
+    border-color: var(--card-usd-accent);
+}
+
+.card-eur:hover {
+    border-color: var(--card-eur-accent);
+}
 
 .card-header {
     display: flex;
@@ -317,14 +398,37 @@ input#real::placeholder {
     color: var(--text-muted);
 }
 
-.card-amount {
+input.card-amount {
     font-size: 1.7rem;
     font-weight: 800;
     letter-spacing: -0.5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font);
+    width: 100%;
+    min-width: 0;
 }
 
-.card-usd .card-amount { color: var(--card-usd-accent); }
-.card-eur .card-amount { color: var(--card-eur-accent); }
+input.card-amount::placeholder {
+    opacity: 0.4;
+}
+
+.card-usd input.card-amount {
+    color: var(--card-usd-accent);
+}
+
+.card-eur input.card-amount {
+    color: var(--card-eur-accent);
+}
+
+.card-usd input.card-amount::placeholder {
+    color: var(--card-usd-accent);
+}
+
+.card-eur input.card-amount::placeholder {
+    color: var(--card-eur-accent);
+}
 
 .card-rate {
     display: flex;
@@ -365,8 +469,15 @@ input#real::placeholder {
     transition: background var(--transition);
 }
 
-.status-dot.online  { background: var(--card-usd-accent); box-shadow: 0 0 6px var(--card-usd-accent); }
-.status-dot.offline { background: #ef4444;                box-shadow: 0 0 6px #ef4444; }
+.status-dot.online {
+    background: var(--card-usd-accent);
+    box-shadow: 0 0 6px var(--card-usd-accent);
+}
+
+.status-dot.offline {
+    background: #ef4444;
+    box-shadow: 0 0 6px #ef4444;
+}
 
 .status-text {
     font-size: 0.72rem;
@@ -381,15 +492,27 @@ input#real::placeholder {
 
 /* --- Responsive --- */
 @media (max-width: 480px) {
-    body { padding: 16px; }
+    body {
+        padding: 16px;
+    }
 
-    .container { padding: 28px 20px 22px; }
+    .container {
+        padding: 28px 20px 22px;
+    }
 
-    h1 { font-size: 1.3rem; }
+    h1 {
+        font-size: 1.3rem;
+    }
 
-    .card { padding: 14px 16px; }
+    .card {
+        padding: 14px 16px;
+    }
 
-    .card-amount { font-size: 1.4rem; }
+    input.card-amount {
+        font-size: 1.4rem;
+    }
 
-    input#real { font-size: 1.1rem; }
+    .converter-input {
+        font-size: 1.1rem;
+    }
 }
