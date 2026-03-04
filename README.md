@@ -2,7 +2,7 @@
 
 <img src="imagem/html-css-js.png" alt="Logo" align="center" width="150">
 
-Um site totalmente responsivo feito com HTML, CSS E JS. O objetivo dele é converter do real para dolar e euro, espero que o site te ajude! Esse era um código que eu já tinha em python, feito em um curso com Gustavo Guanabara e converti para JS.
+Um site totalmente responsivo feito com HTML, CSS E JS. O objetivo dele é converter do Real para Dolar e Euro, espero que o site te ajude! Esse era um código que eu já tinha em python, feito em um curso com Gustavo Guanabara e converti para JS, usei uma API do Banco Central do Brasil para atualizar os valores em tempo real, automaticamente a cada 5 minutos. Usei também um FallBack offline com taxas estimadas caso a API falhe.
 
 OBS: Esterei sempre atualizando!
 
