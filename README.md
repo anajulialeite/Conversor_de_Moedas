@@ -8,7 +8,9 @@ OBS: Esterei sempre atualizando!
 
 ## Link do projeto
 
-Esse é o link do meu projeto <a href= "https://anajulialeite.github.io/Conversor_de_Moedas/">Conversor de Moedas</a>
+<a href="LINK_DO_PROJETO" style="text-decoration:none" target="_blank">
+   <img src="https://img.shields.io/badge/Conversor%20de%20Moedas-%23D4A017?style=for-the-badge&logo=dollar&logoColor=black" alt="Conversor de Moedas"/>
+</a>
 
 ## Demonstração
 
