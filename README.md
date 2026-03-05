@@ -13,7 +13,7 @@ Conversor de moedas em tempo real com cotações do Banco Central do Brasil (BCB
 
 ## Demonstração
 
-<img src="imagem/Moedas.png" alt="moeda" align="center" width="300">
+<img src="imagem/Index.png" alt="moeda" align="center" width="300">
 
 ## License
 
