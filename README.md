@@ -1,4 +1,4 @@
-# Conversor de Moedas — BRL ⇄ USD | EUR
+# Conversor de Moedas
 
 <img src="imagem/html-css-js.png" alt="Logo" align="center" width="150">
 
