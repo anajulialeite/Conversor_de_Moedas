@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description "content="Conversor de moedas em tempo real — converta Real (BRL) para Dólar (USD) e Euro (EUR) com cotações atualizadas.">
+    <meta name="description"
+        content="Conversor de moedas em tempo real — converta Real (BRL) para Dólar (USD) e Euro (EUR) com cotações atualizadas.">
     <link rel="shortcut icon" href="imagem/moeda.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <title>Conversor de Moedas</title>
+    <title>Conversor de Moedas — BRL para USD e EUR</title>
 </head>
 
 <body>
     <div class="app">
-        <!-- Background particles -->
         <div class="particles" aria-hidden="true">
             <span></span><span></span><span></span>
             <span></span><span></span><span></span>
         </div>
 
         <main class="container" id="main-container">
-            <!-- Header -->
             <header class="header">
                 <div class="logo">
                     <span class="logo-icon">💱</span>
@@ -31,7 +30,6 @@
                 <p class="subtitle">Cotações em tempo real</p>
             </header>
 
-            <!-- Input Section -->
             <section class="input-section">
                 <label for="real" class="input-label">
                     <span class="flag">🇧🇷</span>
@@ -44,14 +42,11 @@
                 </div>
             </section>
 
-            <!-- Divider -->
             <div class="divider">
                 <span class="divider-icon">⇅</span>
             </div>
 
-            <!-- Results Cards -->
             <section class="results" id="results">
-                <!-- USD Card -->
                 <div class="card card-usd" id="card-usd">
                     <div class="card-header">
                         <span class="card-flag">🇺🇸</span>
@@ -71,7 +66,6 @@
                     </div>
                 </div>
 
-                <!-- EUR Card -->
                 <div class="card card-eur" id="card-eur">
                     <div class="card-header">
                         <span class="card-flag">🇪🇺</span>
@@ -92,7 +86,6 @@
                 </div>
             </section>
 
-            <!-- Status Footer -->
             <footer class="status-bar">
                 <div class="status-indicator" id="status-indicator">
                     <span class="status-dot"></span>
